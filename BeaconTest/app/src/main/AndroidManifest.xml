@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="kr.co.multi.beacontest" >
+
+    <application
+        android:name=".control.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_in" >
+            >
+        </activity>
+        <activity android:name=".TopActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_top" >
+            >
+            </activity>
+        <activity android:name=".OutActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_out" >
+            >
+        </activity>
+        <activity android:name=".PhotoActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_photo" >
+            >
+        </activity>
+        <activity android:name=".DangerActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_danger" >
+            >
+        </activity>
+        <activity
+            android:name=".SOSActivity"
+            android:launchMode="singleTask"
+            android:label="@string/title_activity_sos" >
+        </activity>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:enabled="true"
+            android:name=".BeaconCheck"
+            />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTitle"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".MountainListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".MountainInfoActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CustomTitle"
+            android:launchMode="singleTask"
+            />
+        <activity
+            android:name=".BeaconListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme"
+            android:launchMode="singleTask"
+            />
+    </application>
+
+    <uses-sdk android:minSdkVersion="18" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

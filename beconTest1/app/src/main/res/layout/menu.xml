@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <navi>
+        <menu>
+            <name>윤하</name>
+            <best>비밀번호486</best>
+        </menu>
+
+        <menu>
+            <name>가비엔제이</name>
+            <best>연애소설2</best>
+        </menu>
+    </navi>
+</LinearLayout>

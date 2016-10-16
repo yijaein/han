@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:myapp="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_refresh"
+          android:checkable="false"
+          android:orderInCategory="1"
+          myapp:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_scan"
+          android:title="@string/menu_scan"
+          android:orderInCategory="100"
+          myapp:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_stop"
+          android:title="@string/menu_stop"
+          android:orderInCategory="101"
+          myapp:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_end"
+        android:title="@string/menu_end"
+        android:orderInCategory="102"
+        myapp:showAsAction="ifRoom|withText"/>
+</menu>

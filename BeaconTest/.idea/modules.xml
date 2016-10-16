@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BeaconTest.iml" filepath="$PROJECT_DIR$/BeaconTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-beacon-library-2.6.1/android-beacon-library-2.6.1.iml" filepath="$PROJECT_DIR$/android-beacon-library-2.6.1/android-beacon-library-2.6.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/picasso-2.3.4/picasso-2.3.4.iml" filepath="$PROJECT_DIR$/picasso-2.3.4/picasso-2.3.4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/volley/volley.iml" filepath="$PROJECT_DIR$/volley/volley.iml" />
+    </modules>
+  </component>
+</project>

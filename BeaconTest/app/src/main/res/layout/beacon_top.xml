@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:id="@+id/topimg"
+        android:layout_gravity="center" />
+       <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:padding="20dp">
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="정상에 도착하셨습니다."
+                android:textColor="#009688"
+                android:textSize="18sp"
+                android:layout_centerInParent="true"
+                android:id="@+id/topname"
+                />
+       </RelativeLayout>
+          
+      
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView 
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountaitop_elevation"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1160m"
+                    android:id="@+id/topgodo"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="해발고도"
+                    android:textColor="#ccc"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView 
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/mountaitop_time"
+                    android:layout_margin="10dp"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="#000"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/toptime"
+                    />
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="도착시간"
+                    android:textColor="#ccc"
+                    android:textSize="20sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+ 
+    
+
+</LinearLayout>

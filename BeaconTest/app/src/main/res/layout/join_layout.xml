@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="485dp"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/signupbg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:text="회원가입"
+        android:textColor="#000"
+        android:textSize="28sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="아이디"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/editxml"
+                android:hint="아이디를 입력해주세요"
+                android:textColorHint="#ccc"
+                android:id="@+id/idEdit"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:inputType="textVisiblePassword"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="비밀번호"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/editxml"
+                android:hint="비밀번호를 입력해주세요"
+                android:textColor="#000"
+                android:textColorHint="#ccc"
+                android:id="@+id/pwdEdit"
+                android:password="true"
+                android:inputType="textPassword"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="성별"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="right"
+                android:id="@+id/gender"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="남자"
+                    android:checked="true"
+                    android:textColor="#000"
+                    android:id="@+id/male"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여자"
+                    android:id="@+id/female"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="연령대"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/age_spinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sign_close_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/buttonxml"
+            android:text="가입하기"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

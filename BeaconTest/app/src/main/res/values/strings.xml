@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CM</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="name">Fullname</string>
+    <string name="menu_scan">입구 찾기</string>
+    <string name="menu_stop">찾기 취소</string>
+    <string name="menu_end">등산 종료</string>
+    <string-array name="age_array">
+        <item>10대</item>
+        <item>20대</item>
+        <item>30대</item>
+        <item>40대</item>
+        <item>50대</item>
+    </string-array>
+    <string name="title_activity_in">입구</string>
+    <string name="title_activity_top">정상</string>
+    <string name="title_activity_out">출구</string>
+    <string name="title_activity_photo">포토존</string>
+    <string name="title_activity_danger">위험구간</string>
+    <string name="title_activity_sos">SOS</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/loginbg"
+        android:layout_marginBottom="50dp"
+        android:gravity="center_vertical|center_horizontal">
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            android:id="@+id/imgAvatar"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/editxml"
+            android:textColor="#000"
+            android:textColorHint="#ccc"
+            android:inputType="textVisiblePassword"
+            android:id="@+id/l_id"
+            android:hint="Enter ID" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/editxml"
+            android:textColor="#000"
+            android:hint="Enter PW"
+            android:textColorHint="#ccc"
+            android:inputType="textPassword"
+            android:id="@+id/l_pwd"
+            android:password="true" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonxml"
+            android:text="로그인"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:text="ID/PW 찾기"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/signup_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:textColor="#000"
+                android:text="회원가입"
+                android:textSize="18sp"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
